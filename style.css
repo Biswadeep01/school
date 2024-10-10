@@ -1,0 +1,237 @@
+body{
+  background-color: #1b1b1b !important;
+}
+
+/* Icon Styling */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 40
+}
+.merriweather-light {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+#loader{
+    background-color: #181515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+    
+  }
+  .loader {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    left: -32px;
+    border-radius: 50%;
+    color: #fff;
+    background: currentColor;
+    box-shadow: 32px 0 , -32px 0 ,  64px 0;
+  }
+  
+  .loader::after {
+    content: '';
+    position: absolute;
+    left: -32px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    background:#FF3D00;
+    animation: move 3s linear infinite alternate;
+  }
+  
+  @keyframes move {
+    0% , 5%{
+      left: -32px;
+      width: 16px;
+    }
+    15% , 20%{
+      left: -32px;
+      width: 48px;
+    }
+    30% , 35%{
+      left: 0px;
+      width: 16px;
+    }
+    45% , 50%{
+      left: 0px;
+      width: 48px;
+    }
+    60% , 65%{
+      left: 32px;
+      width: 16px;
+    }
+  
+    75% , 80% {
+      left: 32px;
+      width: 48px;
+    }
+    95%, 100% {
+      left: 64px;
+      width: 16px;
+    }
+  }
+
+/* Navbar Styling */
+.navbar{
+  background-color: #353e47 !important;
+  z-index: 2;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar-brand{
+  font-size: 1.5rem;
+}
+
+.nav-link{
+  padding-left: 1rem !important;
+  font-family: "Fira Sans", sans-serif;;
+  font-size: 1.2rem;
+  color: #fff !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav-link:hover{
+  color: #FFD700 !important;
+  font-size: 1.3rem;
+}
+
+.navbar-brand:hover{
+  color: #FFD700 !important;
+}
+
+.navbar-toggler{
+  font-size: 1.2rem;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+
+
+section{
+  padding-bottom: 20px;
+}  
+
+/* Carousel Styling */
+.carousel-item{
+    z-index: 1;
+  }
+.carousel-item::after{
+    content: "";
+  margin-top: -150px;
+  height: 150px;
+  width: 100%;
+}
+.carousel-item img{
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-caption{
+    z-index: 2;
+}
+
+.carousel-indicators [data-bs-target]{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+
+.wrap{
+  position: relative;
+}
+.text{
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-white{
+  font-family: "Merriweather", serif !important;
+  font-size: 1rem !important;
+  color: #fff !important;
+}
+
+.text-white-heading{
+  font-family: "Fira Sans", sans-serif !important;
+  color: #c6d1fc !important;
+  text-shadow: 2px 2px 4px rgba(170, 170, 170, 0.5);
+}
+
+.text-black{
+  font-family: "Merriweather", serif !important;
+  font-size: 1rem !important;
+  font-weight: 300 !important;
+  color: #131313 !important;
+}
+
+.text-black-heading{
+  font-family: "Fira Sans", sans-serif !important;
+  color: #0a0a0a !important;
+  text-shadow: 2px 2px 4px rgba(170, 170, 170, 0.5);
+}
+
+
+#about h2{
+  font-size: 3rem;
+  font-family: "Fira Sans", sans-serif;
+  color: #fff !important;
+}
+
+#service h1{
+  font-size: 3.5rem;
+  font-family: "Fira Sans", sans-serif;
+  color: #fff !important;
+}
+#notice h1{
+  font-size: 3.5rem;
+  font-family: "Fira Sans", sans-serif;
+  color: #fff !important;
+}
+.social-link {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+  font-size: 2rem;
+  transition: color 0.3s ease;
+  animation: float 3s ease-in-out infinite; /* Floating animation */
+}
+
+.social-link:hover {
+    color: #FFD700; /* Highlight color on hover */
+}
+
+/* Footer Styling */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 7px 0;
+    z-index: 1;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.under-footer {
+    font-size: 0.9rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+}
